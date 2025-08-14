@@ -1,4 +1,3 @@
-// ✅ This is required
 "use client";
 
 import { Particles } from "react-tsparticles";

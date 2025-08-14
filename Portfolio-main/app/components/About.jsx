@@ -9,7 +9,7 @@ import './About.css';
 
 const About = () => {
   const [showTitlePopup, setShowTitlePopup] = useState(false);
-  const { darkMode } = useDarkMode(); // ⬅ Get darkMode state
+  const { darkMode } = useDarkMode(); 
 
   const handleShowPopup = () => {
     setShowTitlePopup(true);
@@ -35,7 +35,7 @@ const About = () => {
     <h1
   style={{
     marginTop: '-20px',
-    color: darkMode ? 'white' : 'black' // White in dark mode, black in light mode
+    color: darkMode ? 'white' : 'black'
   }}
   className="section-title text-center"
   id="about"
@@ -92,7 +92,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Experience Section */}
+     
         <div className="row mt-5 gx-4 gy-4">
           <div className="col-12">
             <div
@@ -141,7 +141,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Education Section */}
         <div className="row mt-4 gx-4 gy-4">
           <div className="col-12">
             <div

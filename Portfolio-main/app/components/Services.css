@@ -76,11 +76,11 @@
 
 .skill-box img,
 .tool-box img {
-  filter: grayscale(0%); /* Default: Full color */
+  filter: grayscale(0%);
   transition: filter 0.3s ease;
 }
 
 .skill-box:hover img,
 .tool-box:hover img {
-  filter: grayscale(100%); /* Hover: Black & white */
+  filter: grayscale(100%); 
 }

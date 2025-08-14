@@ -87,7 +87,6 @@
 }
 
 
-/* Base border style */
 .portfolio-container {
   border: 3px solid transparent;
   border-radius: 20px;
@@ -211,12 +210,12 @@
 
 @media (max-width: 992px) {
   .profile-card {
-    margin-top: 30px; /* Moves the card down in tablet & mobile view */
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 576px) {
   .profile-card {
-    margin-top: 50px; /* Extra gap for small screens */
+    margin-top: 50px; 
   }
 }

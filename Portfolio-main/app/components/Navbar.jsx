@@ -13,12 +13,11 @@ const MyNavbar = () => {
   const handleClose = () => setShowOffcanvas(false);
   const handleShow = () => setShowOffcanvas(true);
 
-  // Toggle dark mode
+ 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
-  // Add/remove dark class to body
   useEffect(() => {
     const body = document.body;
     if (darkMode) {
@@ -30,12 +29,11 @@ const MyNavbar = () => {
     }
   }, [darkMode]);
 
-  // Scroll to contact section
   const handleContactClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
-      handleClose(); // Close offcanvas if open
+      handleClose(); 
     }
   };
 

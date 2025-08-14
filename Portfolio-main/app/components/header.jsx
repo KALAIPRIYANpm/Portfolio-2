@@ -11,7 +11,6 @@ const Header = () => {
   const name = "Kalaipriyan";
   const [visibleLetters, setVisibleLetters] = useState(0);
 
-  // Custom typing effect state
   const titles = [
     'Full Stack Developer',
     'Blockchain Developer',
@@ -22,7 +21,6 @@ const Header = () => {
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
-  // Name typing animation
   useEffect(() => {
     const interval = setInterval(() => {
       setVisibleLetters((prev) => {
@@ -34,7 +32,6 @@ const Header = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Title typing effect
   useEffect(() => {
     const currentTitle = titles[titleIndex];
     const typingSpeed = isDeleting ? 50 : 100;
@@ -62,7 +59,6 @@ const Header = () => {
       <div className="container px-3 px-md-5">
         <div className="row align-items-center flex-column flex-lg-row">
 
-          {/* Left Side - Text Content */}
           <div className="col-lg-6 text-center text-lg-start mt-4 mt-lg-0 header-left">
             <h1 className="fw-bold display-5 mb-2">
               Hi, I'm{' '}
@@ -79,7 +75,6 @@ const Header = () => {
               </span>
             </h1>
 
-            {/* Typing effect title */}
             <h3 className="typing-title text-muted mb-4">
               {displayedText}
               <span className="blinking-cursor">|</span>
@@ -120,7 +115,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Right Side - Profile Card */}
           <div className="col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
             <motion.div
               className="profile-card shadow-lg"
@@ -148,7 +142,7 @@ const Header = () => {
 };`}</pre>
               </div>
 
-              {/* Social Icons */}
+             
               <div className="social-icons mt-3">
                 <a href="https://instagram.com" target="_blank"><FaInstagram /></a>
                 <a href="https://www.linkedin.com/in/kalaipriyan-prabakaran-4b0584269/" target="_blank"><FaLinkedin /></a>

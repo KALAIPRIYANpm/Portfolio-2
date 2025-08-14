@@ -38,8 +38,8 @@ const Projects = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in ms
-      once: true,     // Animation happens only once
+      duration: 1000, 
+      once: true,    
       easing: 'ease-in-out',
     });
   }, []);
@@ -62,7 +62,7 @@ const Projects = () => {
             key={idx}
             className="col-md-6 col-lg-4"
             data-aos="fade-up"
-            data-aos-delay={idx * 100} // Delay for staggered animation
+            data-aos-delay={idx * 100}
           >
             <div className="project-card shadow-sm p-3 rounded h-100">
               <div

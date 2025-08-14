@@ -1,4 +1,3 @@
-// app/components/DarkModeContext.js
 'use client';
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
@@ -9,7 +8,6 @@ export const DarkModeProvider = ({ children }) => {
 
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
-  // Apply dark mode styles to body
   useEffect(() => {
     const body = document.body;
     if (darkMode) {

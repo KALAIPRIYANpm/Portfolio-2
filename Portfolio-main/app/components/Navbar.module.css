@@ -28,7 +28,7 @@
   padding: 6px 12px;
 }
 
-/* For medium and larger devices (>=768px) */
+
 @media screen and (min-width: 768px) {
   .navLinks {
     flex-direction: row;
