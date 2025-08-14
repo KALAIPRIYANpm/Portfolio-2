@@ -1,0 +1,148 @@
+* {
+  font-family: 'Funnel Display', sans-serif;
+}
+
+/* Section styling */
+.projects-section {
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Project card style */
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image hover overlay */
+.zoomable-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.zoomable-image img {
+  transition: transform 0.4s ease;
+}
+
+.zoomable-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.zoomable-image:hover img {
+  transform: scale(1.05);
+}
+
+.zoomable-image:hover::after {
+  opacity: 1;
+}
+
+/* Tech badges animation */
+.tech-stack .badge {
+  background: linear-gradient(135deg, #000, #444);
+  font-size: 0.8rem;
+  transition: transform 0.2s ease, background 0.3s ease;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.tech-stack .badge:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #444, #000);
+}
+
+/* Zoom modal animation */
+.zoom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  animation: fadeIn 0.4s ease;
+}
+
+.zoom-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  max-width: 900px;
+  max-height: 600px;
+  animation: scaleUp 0.3s ease;
+}
+
+.zoom-content img {
+  object-fit: contain;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.9); opacity: 0.8; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Title styling */
+.magic-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.magic-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin: 10px auto 0;
+}
+
+.zoomable-image:hover img {
+  transform: scale(1.05);
+}
+/* Bigger zoom effect on hover */
+.zoomable-image:hover img {
+  transform: scale(1.12);
+  transition: transform 0.4s ease-in-out;
+}
+.project-card:hover .zoomable-image img {
+  transform: scale(1.12);
+}
