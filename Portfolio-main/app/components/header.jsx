@@ -120,19 +120,15 @@ const Header = () => {
 
 
 
-      <button
-  onClick={() => {
-    const link = document.createElement("a");
-    link.href = "/Kalaipriyan_P_resume.pdf"; 
-    link.download = "Kalaipriyan_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
+<button
+  onClick={() => window.open("/assets/public/Kalai_resume.pdf", "_blank")}
   className="btn btn-outline-dark btn-lg rounded-pill no-hover"
 >
   Get Resume
 </button>
+
+
+
 
 
 
