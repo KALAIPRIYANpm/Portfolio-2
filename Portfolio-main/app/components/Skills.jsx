@@ -58,18 +58,23 @@ useEffect(() => {
           ))}
         </div>
 
-        <h3 className="tools-heading text-center mt-5" data-aos="fade-up">
-          Tools I Use
-        </h3>
-        <div className="row g-3 justify-content-center mt-3">
-          {tools.map((icon, idx) => (
-            <div key={idx} className="col-4 col-sm-3 col-md-2 col-lg-1" data-aos="flip-up">
-              <div className="tool-box shadow-sm">
-                <Image src={icon} alt={`Tool ${idx}`} width={30} height={30} />
-              </div>
-            </div>
-          ))}
-        </div>
+       <h3 className="tools-heading text-center mt-5" data-aos="fade-up">
+  Tools I Use
+</h3>
+<div className="row g-3 justify-content-center mt-3">
+  {tools.map((icon, idx) => (
+    <div 
+      key={idx} 
+      className="col-6 col-sm-4 col-md-3 col-lg-2 col-xl-1" 
+      data-aos="flip-up"
+    >
+      <div className="tool-box shadow-sm">
+        <Image src={icon} alt={`Tool ${idx}`} width={30} height={30} />
+      </div>
+    </div>
+  ))}
+</div>
+
       </section>
     </>
   );

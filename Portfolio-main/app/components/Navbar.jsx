@@ -33,6 +33,7 @@ const MyNavbar = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
+      
       handleClose(); 
     }
   };
@@ -84,13 +85,13 @@ const MyNavbar = () => {
             </Nav>
 
             <div className="d-flex justify-content-center justify-content-lg-end align-items-center gap-3 mt-4 mt-lg-0">
-              <Button
+              {/* <Button
                 variant="outline-secondary"
                 className="rounded-circle p-2"
                 onClick={toggleDarkMode}
               >
 {darkMode ? <BsSun /> : <BsMoon />}
-              </Button>
+              </Button> */}
 
               <Button
                 variant={darkMode ? 'outline-light' : 'outline-dark'}

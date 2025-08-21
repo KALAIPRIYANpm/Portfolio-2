@@ -165,10 +165,10 @@ const About = () => {
                 <p className="text-muted mb-2">Muthayammal Engineering College – 8.88 CGPA</p>
 
                 <h6 className="fw-semibold mb-1">Higher Secondary Certificate (HSC)</h6>
-                <p className="text-muted mb-2">Don Bosco Matriculation Hr. Sec. School – 80%</p>
+                <p className="text-muted mb-2">Don Bosco Matriculation Hr. Sec. School – 78%</p>
 
                 <h6 className="fw-semibold mb-1">Secondary School Leaving Certificate (SSLC)</h6>
-                <p className="text-muted mb-0">Don Bosco Matriculation Hr. Sec. School – 90%</p>
+                <p className="text-muted mb-0">Don Bosco Matriculation Hr. Sec. School – 81%</p>
               </div>
             </div>
           </div>

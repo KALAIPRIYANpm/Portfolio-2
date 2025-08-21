@@ -101,17 +101,42 @@ const Header = () => {
 
 
 
-            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-              <a href="#contact" className="btn btn-dark btn-lg rounded-pill">
-                Contact Me
-              </a>
-              <a
-                href="/cv/Kalaipriyan_CV.pdf"
-                download
-                className="btn btn-outline-dark btn-lg rounded-pill no-hover"
-              >
-                Download CV
-              </a>
+          <div
+  className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+  style={{ position: "relative", zIndex: 1000 }}
+>
+          <button
+  onClick={() =>
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&to=kalaipriyan7777@gmail.com",
+      "_blank"
+    )
+  }
+  className="btn btn-dark btn-lg rounded-pill"
+>
+  Contact Me
+</button>
+
+
+
+
+      <button
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "/Kalaipriyan_P_resume.pdf"; 
+    link.download = "Kalaipriyan_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+  className="btn btn-outline-dark btn-lg rounded-pill no-hover"
+>
+  Get Resume
+</button>
+
+
+
+
             </div>
           </div>
 
@@ -144,7 +169,7 @@ const Header = () => {
 
              
               <div className="social-icons mt-3">
-                <a href="https://instagram.com" target="_blank"><FaInstagram /></a>
+                <a href="https://www.instagram.com/kalaipriyan_007?igsh=MTFxeTdnaWh3YTQzOQ==" target="_blank"><FaInstagram /></a>
                 <a href="https://www.linkedin.com/in/kalaipriyan-prabakaran-4b0584269/" target="_blank"><FaLinkedin /></a>
                 <a href="https://github.com/KALAIPRIYANpm" target="_blank"><FaGithub /></a>
                 <a href="mailto:kalaipriyan7777@example.com"><FaEnvelope /></a>

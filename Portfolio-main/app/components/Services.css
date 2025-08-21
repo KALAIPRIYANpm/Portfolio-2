@@ -84,3 +84,112 @@
 .tool-box:hover img {
   filter: grayscale(100%); 
 }
+
+
+.tool-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1.5px solid #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* ✅ Default size (desktop) */
+  width: 70px;
+  height: 70px;
+}
+
+.tool-box img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tool-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.tool-box:hover img {
+  transform: scale(1.1);
+}
+
+/* ✅ Tablet view */
+@media (max-width: 992px) {
+  .tool-box {
+    width: 60px;
+    height: 60px;
+    padding: 12px;
+  }
+  .tool-box img {
+    max-width: 75%;
+    max-height: 75%;
+  }
+}
+
+/* ✅ Mobile view */
+@media (max-width: 576px) {
+  .tool-box {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .tool-box img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+.tool-box {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1.5px solid #dee2e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Desktop default */
+  width: 80px;
+  height: 80px;
+  margin: 0 auto; /* ✅ keeps centered in grid */
+}
+
+.tool-box img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tool-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tool-box:hover img {
+  transform: scale(1.1);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .tool-box {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .tool-box {
+    width: 55px;
+    height: 55px;
+  }
+  .tool-box img {
+    max-width: 75%;
+    max-height: 75%;
+  }
+}

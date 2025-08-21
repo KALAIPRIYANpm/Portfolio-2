@@ -219,3 +219,17 @@
     margin-top: 50px; 
   }
 }
+
+.cartoon-wrapper::before {
+  z-index: -1; /* instead of 1 */
+}
+
+.portfolio-container::before {
+  z-index: -1; /* instead of default */
+}
+
+button, .btn {
+  cursor: pointer !important;
+  position: relative;
+  z-index: 1000 !important;
+}
