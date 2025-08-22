@@ -7,6 +7,7 @@ import './Header.css';
 import { FaInstagram, FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 import { SiLeetcode, SiCodechef } from 'react-icons/si';
 
+
 const Header = () => {
   const name = "Kalaipriyan";
   const [visibleLetters, setVisibleLetters] = useState(0);
@@ -99,8 +100,6 @@ const Header = () => {
   My focus is on delivering products that solve problems and leave a lasting impression.
 </p>
 
-
-
           <div
   className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
   style={{ position: "relative", zIndex: 1000 }}
@@ -117,22 +116,14 @@ const Header = () => {
   Contact Me
 </button>
 
+<a 
 
-
-
-<button
-  onClick={() => window.open("/assets/public/Kalai_resume.pdf", "_blank")}
+  href="/Kalai_resume.pdf" 
+  download 
   className="btn btn-outline-dark btn-lg rounded-pill no-hover"
 >
-  Get Resume
-</button>
-
-
-
-
-
-
-
+  Download Resume
+</a>
             </div>
           </div>
 
@@ -162,8 +153,6 @@ const Header = () => {
   }
 };`}</pre>
               </div>
-
-             
               <div className="social-icons mt-3">
                 <a href="https://www.instagram.com/kalaipriyan_007?igsh=MTFxeTdnaWh3YTQzOQ==" target="_blank"><FaInstagram /></a>
                 <a href="https://www.linkedin.com/in/kalaipriyan-prabakaran-4b0584269/" target="_blank"><FaLinkedin /></a>
