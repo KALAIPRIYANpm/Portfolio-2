@@ -3,9 +3,9 @@ import './globals.css';
 import { DarkModeProvider } from './components/DarkModeContext';
 
 export const metadata = {
-  title: 'My Portfolio',
+  title: 'Kalaipriyan',
   description: 'A portfolio styled with Funnel Display',
-  icons:"favicon.ico",
+  icons:"/favicon.ico",
 };
 
 export default function RootLayout({ children }) {
